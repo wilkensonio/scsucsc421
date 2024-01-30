@@ -7,6 +7,12 @@ a n m = n + m
 exOr :: Bool -> Bool -> Bool
 exOr a b = (a || b) && not (a && b)
 
+fib :: Integer -> Integer
+    | n == 1  = 1
+    | n == 2  = 1
+    | n > 2   = fib (n-1) + fib (n-2)
+    
+
 main :: IO ()
 
 main = do  
@@ -14,6 +20,7 @@ main = do
     putStrLn (show result)
 
     putStrLn (show (exOr True True))
+    putStrLn (show (fib 10))
 
 
 
