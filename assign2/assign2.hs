@@ -72,6 +72,11 @@ _min a b
     | otherwise = b 
 
 
+areaTrian::Float -> Float -> Float -> Float
+areaTrian a b c = sqrt(s*(s-a)*(s-b)*(s-c))
+    where s = (a+b+c)/2
+
+
 
 main :: IO()
 main = do
@@ -94,3 +99,5 @@ main = do
     putStrLn $ show(nAnd False False)
 
     putStrLn $ show(_min 10 6)
+
+    putStrLn $ show(areaTrian 3 4 5)
