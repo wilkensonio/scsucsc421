@@ -1,0 +1,2 @@
+ghc classmarch4
+./classmarch4
