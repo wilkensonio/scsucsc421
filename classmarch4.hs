@@ -206,6 +206,11 @@ unzip' n = (left, right)
 
 type Shape = Double
 
+
+integertofloattostring :: Integer -> Float
+integertofloattostring n = fromInteger n /100
+
+
 main :: IO()
 main = do 
     -- putStrLn (show (index [1..10] 3))
@@ -233,7 +238,9 @@ main = do
     -- putStrLn ( show ( zip' ['q', 'f'] ['R','f']))
     -- putStrLn ( show (unzip' [(1,2)]))
 
-    putStrLn ( show ([True, False]))
+    -- putStrLn ( show ([True, False]))
+    putStrLn (show (integertofloattostring 1000))
+
 
 
 
